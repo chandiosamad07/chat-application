@@ -17,7 +17,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
 
   const history = useHistory();
-  const { setUser } = ChatState;
+  const { setUser } = ChatState();
 
   const submitHandler = async () => {
     setLoading(true);
@@ -59,8 +59,9 @@ const Login = () => {
       history.push("/chats");
     } catch (error) {
       toast({
+        
         title: "Error Occurred!",
-        description: error.response.data.message,
+         description: "login faild",
         status: "error",
         duration: 5000,
         isClosable: true,
