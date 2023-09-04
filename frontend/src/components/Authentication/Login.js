@@ -112,14 +112,7 @@ const Login = () => {
       >
         Login
       </Button>
-      <Button
-        variant="solid"
-        colorScheme="gray"
-        width="100%"
-        onClick={setGuestCredentials}
-      >
-        Get Guest User Credentials
-      </Button>
+     
     </VStack>
   );
 };
